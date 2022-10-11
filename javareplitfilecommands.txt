@@ -1,0 +1,4 @@
+alias run='bash /home/runner/*/.cache/run.sh run'
+
+compile = "bash .cache/run.sh compile Main.java || javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
+run = "bash .cache/run.sh run Main.class || java -classpath .:target/dependency/* Main"
