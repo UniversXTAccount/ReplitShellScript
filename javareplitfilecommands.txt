@@ -1,6 +1,10 @@
-compile = "bash .cache/run.sh compile Main.java || javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
-run = "bash .cache/run.sh run Main.class || java -classpath .:target/dependency/* Main"
+compile = "bash /home/runner/*/.cache/run.sh compile Main.java || javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
+run = "bash /home/runner/*/.cache/run.sh run Main.class || java -classpath .:target/dependency/* Main"
 
+
+
+compile = "cd <folder>/ && bash /home/runner/*/.cache/run.sh compile Main.java || javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')"
+run = "cd <folder>/ && bash /home/runner/*/.cache/run.sh run Main.class || java -classpath .:target/dependency/* Main"
 
 
 alias run='bash /home/runner/*/.cache/run.sh run'
